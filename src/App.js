@@ -1,12 +1,14 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
 import HomePage from "./Page/HomePage/HomePage";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
+      <Hero />
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* <Route path="/:videoId" element={<HomePage />} />

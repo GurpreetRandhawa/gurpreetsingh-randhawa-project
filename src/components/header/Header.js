@@ -25,9 +25,9 @@ export default function Header() {
 
         <div className="header__right-container">
           <div className="header__list">Packages</div>
+          <div className="header__list">Customize</div>
           <div className="header__list">How it Works</div>
           <div className="header__list">About</div>
-          <div className="header__list">Contact Us</div>
           <div className="header__list">Cart</div>
         </div>
       </div>
@@ -35,9 +35,9 @@ export default function Header() {
         <div className="header__hamburger-list-container">
           <div className="header__hamburger-list">
             <div className="header__hamburger-item">Packages</div>
+            <div className="header__hamburger-item">Customize</div>
             <div className="header__hamburger-item">How it Works</div>
             <div className="header__hamburger-item">About</div>
-            <div className="header__hamburger-item">Contact Us</div>
             <div className="header__hamburger-item">Cart</div>
           </div>
         </div>
