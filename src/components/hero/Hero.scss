@@ -4,7 +4,7 @@
 @import "../../styles/partials/mixins";
 
 .hero {
-  padding: 2.5rem 3rem;
+  padding: 2.5rem 3rem 0rem 3rem;
 
   @include medium {
     padding-left: 0;
