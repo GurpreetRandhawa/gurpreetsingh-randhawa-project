@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="about__left">
           <img src={about1} className="about__im"></img>
         </div>
-        <div classname="about__right">
+        <div className="about__right">
           <div className="about__img1">
             <img src={about2} className="about__im"></img>
           </div>

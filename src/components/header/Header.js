@@ -28,11 +28,12 @@ export default function Header() {
           <Link to={"/packages"} className="header__list">
             Packages
           </Link>
-          <div className="header__list">Customize</div>
+          <Link to={"/customize"} className="header__list">
+            Customize
+          </Link>
           <Link to={"/about"} className="header__list">
             About
           </Link>
-          <div className="header__list">Cart</div>
         </div>
       </div>
       {openlist === true ? (
@@ -41,11 +42,12 @@ export default function Header() {
             <Link to={"/packages"} className="header__hamburger-item">
               Packages
             </Link>
-            <div className="header__hamburger-item">Customize</div>
+            <Link to={"/customize"} className="header__hamburger-item">
+              Customize
+            </Link>
             <Link to={"/about"} className="header__hamburger-item">
               About
             </Link>
-            <div className="header__hamburger-item">Cart</div>
           </div>
         </div>
       ) : (

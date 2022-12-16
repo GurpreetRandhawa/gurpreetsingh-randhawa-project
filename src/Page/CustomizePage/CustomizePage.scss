@@ -1,0 +1,49 @@
+@use "../../styles/partials/colors" as colors;
+@use "../../styles/partials/fonts";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/mixins";
+
+.custom {
+  &__title {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  &__veggie {
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  &__list {
+    padding: 0 2rem;
+    width: 50%;
+    display: inline-block;
+    @include medium {
+      padding: 0 5rem;
+    }
+    @include large {
+      padding: 0 8rem;
+    }
+  }
+  &__holder {
+  }
+  &__image-container {
+    width: 100%;
+  }
+  &__i-con {
+    width: 100%;
+    height: 15rem;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__para {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
