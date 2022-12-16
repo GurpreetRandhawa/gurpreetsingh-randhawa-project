@@ -1,0 +1,12 @@
+@use "../../styles/partials/colors" as colors;
+@use "../../styles/partials/fonts";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/mixins";
+
+.cart {
+  &__heading {
+    font-size: 2.5rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}

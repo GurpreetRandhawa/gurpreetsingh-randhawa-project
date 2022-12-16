@@ -1,0 +1,92 @@
+@use "../../styles/partials/colors" as colors;
+@use "../../styles/partials/fonts";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/mixins";
+
+.package {
+  &__heading {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  &__box {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    @include medium {
+      padding: 0 5rem;
+      align-items: center;
+    }
+    @include large {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__list {
+    border: 2px solid colors.$Background-Color;
+    margin-bottom: 1.5rem;
+    border-bottom-right-radius: 100px;
+    @include medium {
+      width: 60%;
+    }
+    @include large {
+      width: 30%;
+    }
+  }
+  &__image-container {
+    width: 100%;
+    height: 250px;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    margin-top: 1.5rem;
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+  }
+  &__price {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+    color: colors.$Secondary-TextColor;
+    font-weight: 600;
+  }
+  &__ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__in {
+    background-color: colors.$Secondary-TextColor;
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+    font-size: 1.1rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    @include large {
+      margin-top: 1rem;
+    }
+  }
+  &__cart {
+    background-color: colors.$Secondary-TextColor;
+    display: inline-block;
+    width: 25%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    @include large {
+      padding: 0.5rem;
+      color: colors.$Primary-TextColor;
+    }
+  }
+}

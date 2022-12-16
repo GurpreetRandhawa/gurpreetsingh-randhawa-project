@@ -1,0 +1,79 @@
+@use "../../styles/partials/colors" as colors;
+@use "../../styles/partials/fonts";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/mixins";
+
+.hero {
+  padding: 2.5rem 3rem 0rem 3rem;
+
+  @include medium {
+    padding-left: 0;
+    display: flex;
+  }
+  &__side-img {
+    display: none;
+    @include medium {
+      display: flex;
+      height: 60vw;
+      position: relative;
+      top: -75px;
+    }
+  }
+  &__img {
+    height: 100%;
+  }
+  &__video-features {
+    @include medium {
+      width: 75%;
+      padding-top: 3rem;
+    }
+  }
+
+  &__video-container {
+    width: 100%;
+    height: 49vw;
+    box-shadow: 0px 0px 30px colors.$Background-Color;
+    @include medium {
+      width: 80%;
+      height: 55%;
+      margin: 0 auto;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+  &__features {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include medium {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include large {
+      margin-top: 5rem;
+    }
+  }
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include medium {
+      align-items: flex-start;
+      width: 30%;
+    }
+  }
+  &__feature-title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    @include medium {
+      font-size: 1.2rem;
+    }
+    @include large {
+      font-size: 1.5rem;
+    }
+  }
+}

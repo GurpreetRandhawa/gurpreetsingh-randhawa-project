@@ -1,0 +1,156 @@
+@use "../../styles/partials/colors" as colors;
+@use "../../styles/partials/fonts";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/mixins";
+
+.main {
+  margin-top: 2rem;
+  &__work {
+    margin-bottom: 1.5rem;
+    @include medium {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__work-title {
+    color: colors.$Primary-TextColor;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    @include medium {
+      font-size: 2.6rem;
+    }
+  }
+  &__work-container {
+    margin: 0 0rem;
+    position: relative;
+    width: 100vw;
+    height: 20rem;
+    overflow-x: hidden;
+    @include medium {
+      height: 23rem;
+      width: 80vw;
+      margin: 0 auto;
+    }
+  }
+  &__anim {
+    display: flex;
+    justify-content: space-around;
+    height: 20rem;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    @include medium {
+      height: 23rem;
+    }
+  }
+  &__primary {
+    animation: primary 8s linear infinite;
+  }
+
+  @keyframes primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+
+  &__work-holder {
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px colors.$Background-Color;
+    margin-left: 1rem;
+    padding: 1rem;
+    @include medium {
+      margin-left: 1.5rem;
+      height: 23rem;
+    }
+  }
+  &__gif-holder {
+    height: 70%;
+  }
+  &__gif {
+    height: 100%;
+  }
+  &__gif-title {
+    margin: 0;
+    color: colors.$Secondary-TextColor;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.7rem;
+    text-align: center;
+    @include medium {
+      font-size: 1.2rem;
+    }
+  }
+  &__gif-details {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 0.6rem;
+    color: colors.$Secondary-TextColor;
+    font-weight: 500;
+    text-align: center;
+    @include medium {
+      font-size: 1.1rem;
+    }
+  }
+  &__location {
+    background-color: #f5f8fa;
+    padding: 2.5rem 3rem;
+  }
+  &__location-title {
+    color: colors.$Primary-TextColor;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    @include medium {
+      font-size: 2.6rem;
+    }
+  }
+  &__subtitle {
+    color: colors.$Secondary-TextColor;
+    text-align: center;
+    font-size: 1.3rem;
+    @include medium {
+      font-size: 1.5rem;
+    }
+    @include large {
+      font-size: 1.6rem;
+    }
+  }
+  &__cities {
+    color: colors.$Secondary-TextColor;
+    text-align: center;
+  }
+  &__city {
+    font-size: 0.9rem;
+    margin-right: 1.2rem;
+    @include medium {
+      font-size: 1.2rem;
+    }
+    @include large {
+      font-size: 1.5rem;
+    }
+  }
+  &__city-img {
+    padding-top: 1rem;
+    width: 100%;
+    height: 60vw;
+    @include medium {
+      height: 35rem;
+    }
+    @include large {
+      height: 45rem;
+    }
+  }
+  &__cit-image {
+    width: 100%;
+    height: 100%;
+  }
+}

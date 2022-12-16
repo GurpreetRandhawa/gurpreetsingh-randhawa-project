@@ -1,0 +1,20 @@
+@use "./styles/partials/fonts";
+@import "./styles/partials/breakpoints";
+@import "./styles/partials/mixins";
+
+body {
+  max-width: 100vw;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Avenir";
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
