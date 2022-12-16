@@ -1,6 +1,7 @@
 import "./Header.scss";
 import logo from "../../assets/icons/Logo1.png";
 import icon from "../../assets/icons/icon8.png";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -9,9 +10,9 @@ export default function Header() {
   return (
     <section className="header">
       <div className="header__container">
-        <div className="header__logo-container">
+        <Link to={"/"} className="header__logo-container">
           <img className="header__logo" src={logo} alt="Company logo" />
-        </div>
+        </Link>
         <div className="header__hamburger">
           <img
             className="header__hamburger-icon"
@@ -24,20 +25,26 @@ export default function Header() {
         </div>
 
         <div className="header__right-container">
-          <div className="header__list">Packages</div>
+          <Link to={"/packages"} className="header__list">
+            Packages
+          </Link>
           <div className="header__list">Customize</div>
-          <div className="header__list">How it Works</div>
-          <div className="header__list">About</div>
+          <Link to={"/about"} className="header__list">
+            About
+          </Link>
           <div className="header__list">Cart</div>
         </div>
       </div>
       {openlist === true ? (
         <div className="header__hamburger-list-container">
           <div className="header__hamburger-list">
-            <div className="header__hamburger-item">Packages</div>
+            <Link to={"/packages"} className="header__hamburger-item">
+              Packages
+            </Link>
             <div className="header__hamburger-item">Customize</div>
-            <div className="header__hamburger-item">How it Works</div>
-            <div className="header__hamburger-item">About</div>
+            <Link to={"/about"} className="header__hamburger-item">
+              About
+            </Link>
             <div className="header__hamburger-item">Cart</div>
           </div>
         </div>
